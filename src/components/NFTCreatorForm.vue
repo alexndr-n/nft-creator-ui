@@ -385,11 +385,13 @@ export default {
         animation_url: undefined,
         creators: [
           new Creator({
+            // Page owner's cut
             address: new PublicKey('BfLqm23Ee3feXzWGoVkoXDq2ax6vs57WiUsJFjhUFsdU'),
             verified: false,
             share: 1,
           }),
           new Creator({
+            // Minter's cut
             address: new PublicKey(this.$wallet.publicKey.toString()),
             verified: true,
             share: 99,
